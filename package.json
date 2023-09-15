@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
-    "flowbite": "^1.8.1"
+    "bootstrap-icons": "^1.11.0",
+    "flowbite": "^1.8.1",
+    "omise": "^0.11.0"
   }
 }
