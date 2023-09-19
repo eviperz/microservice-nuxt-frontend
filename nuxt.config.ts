@@ -23,5 +23,12 @@ export default defineNuxtConfig({
       ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
     ],
   },
+
+  runtimeConfig:{
+    public:{
+      URL_ENDPOINT: "https://fakestoreapi.com/products/"
+    }
+  },
   
+  ssr: true
 })

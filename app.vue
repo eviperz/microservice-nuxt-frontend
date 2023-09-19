@@ -2,7 +2,7 @@
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 
-import { useCounterStore } from './store/api.store';
+import { useCounterStore } from './store/pinia.store';
 
 let store = useCounterStore()
 store.count = 5
@@ -12,6 +12,9 @@ console.log(store.doubleCount);
 onMounted(() => {
     initFlowbite();
 })
+
+const {data: api} = await useMyFetch("/1", {})
+const someone = api.value
 </script>
 
 <template>
@@ -55,4 +58,5 @@ onMounted(() => {
   </div>
 
   <button class="btn btn-accent btn-outline">Three</button>
+  <p>{{ someone.title }}</p>
 </template>
