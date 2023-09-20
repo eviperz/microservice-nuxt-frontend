@@ -2,19 +2,20 @@
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 
-import { useCounterStore } from './store/pinia.store';
-
-let store = useCounterStore()
-store.count = 5
-console.log(store.doubleCount);
+import { apiStore } from './store/pinia.store';
 
 // initialize components based on data attribute selectors
 onMounted(() => {
     initFlowbite();
 })
 
-const {data: api} = await useMyFetch("/1", {})
-const someone = api.value
+
+const { get , getAll } = apiStore();
+let { keep } = apiStore();
+const { data:some } = await get('1')
+keep = some.value
+
+
 </script>
 
 <template>
@@ -22,8 +23,18 @@ const someone = api.value
       <div class="flex justify-center p-4">
           <button id="button" data-modal-toggle="modal" data-modal-target="modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Show modal</button>
       </div>
+        <p class="m-8 border border-white rounded-lg p-4">
+            <span class="underline underline-offset-4">
+                All object from request
+            </span>
+            <br>
+            {{ keep }}
+        </p>
 
-      <p>Double count is {{ store.doubleCount }}</p>
+        <p class="m-8 rounded-lg border border-white p-3">
+            <span class="underline underline-offset-4">title api</span><br>
+            {{ keep.title }}
+        </p>
 
       <div id="modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
           <div class="relative w-full max-w-2xl max-h-full">
@@ -58,5 +69,4 @@ const someone = api.value
   </div>
 
   <button class="btn btn-accent btn-outline">Three</button>
-  <p>{{ someone.title }}</p>
 </template>
