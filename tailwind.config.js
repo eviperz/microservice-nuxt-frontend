@@ -10,8 +10,12 @@ module.exports = {
       "./node_modules/flowbite/**/*.{js,ts}",
   ],
   theme: {
-    extend: {},
-  },
+    extend: {
+      fontFamily: {
+        poppin: ['Poppins']
+      },
+    }
+},
   plugins: [
     require('flowbite/plugin'),
     require("daisyui")

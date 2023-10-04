@@ -9,14 +9,18 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   css:['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   devtools: { enabled: true },
+
   runtimeConfig:{
     public:{
       omise:{
