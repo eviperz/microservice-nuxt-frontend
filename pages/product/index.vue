@@ -64,7 +64,6 @@
                 <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
                   <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">{{ product.name }}</h1>
                 </div>
-        
                 <!-- Options -->
                 <div class="mt-4 lg:row-span-3 lg:mt-0">
                     <h2 class="sr-only">Product information</h2>
