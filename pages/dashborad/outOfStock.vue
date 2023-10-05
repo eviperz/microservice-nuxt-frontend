@@ -1,10 +1,11 @@
 <template>
-     <div class="mx-full w-full p-2">
-      <div class="flex-shrink max-w-full px-4 w-full">   
-					    <p class="text-3xl font-poppin pt-3 pb-5">PRODUCT</p>
-					  </div>
+     <div class="animate-fade-down mx-full w-full p-2">
+      <div class="flex-shrink max-w-full px-4 w-[500px]">   
+					    <p class="text-3xl font-poppin mt-3 mb-5">Out Of Stock</p>
+					  </div>    
+     
   <div class="flex flex-wrap flex-col">
-       
+    
             
     <div class="m-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg ">
       
@@ -35,44 +36,29 @@
 
                     <div class="w-full mb-6 overflow-x-auto">
                       <form action="">
-                       
-                          <div class="dataTable-top flex flex-row justify-between m-5"><div class="dataTable-dropdown">
-                            <label><select class="dataTable-selector">
-                              <option value="5">5</option>
-                              <option value="10">10</option>
-                              <option value="15">15</option>
-                              <option value="20">20</option>
-                              <option value="25">25</option>
-                            </select> entries per page</label>
-                          </div><div class="dataTable-search">
-                            <input class="dataTable-input" placeholder="Search..." type="text"></div>
-                          </div>
-                      
-                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
-                          <div class="dataTable-container">
-                            <table class="table-sorter table-bordered w-full ltr:text-left rtl:text-right text-gray-600 dark:text-gray-400 dataTable-table">
+                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns"><div class="dataTable-top flex flex-row justify-between m-5"><div class="dataTable-dropdown"><label><select class="dataTable-selector"><option value="5">5</option><option value="10" selected="">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select> entries per page</label></div><div class="dataTable-search"><input class="dataTable-input" placeholder="Search..." type="text"></div></div><div class="dataTable-container"><table class="table-sorter table-bordered w-full ltr:text-left rtl:text-right text-gray-600 dark:text-gray-400 dataTable-table">
                           <thead>
-                            <tr class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40">
-                              <th data-sortable="false" >
-                                <input id="check_all" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700">
-                              </th>
-                                <th data-sortable="" >
-                                  <a href="#" class="dataTable-sorter mx-5">Products</a>
-                                </th>
-                                <th class="hidden lg:table-cell" data-sortable="" >
-                                  <a href="#" class="dataTable-sorter mx-5">Update</a>
-                                </th>
-                                  <th data-sortable="" >
-                                    <a href="#" class="dataTable-sorter mx-5">Pricing</a>
-                                  </th>
-                                    <th class="hidden lg:table-cell" data-sortable="" >
-                                      <a href="#" class="dataTable-sorter mx-5">Qty</a>
-                                    </th>
-                                      <th class="hidden lg:table-cell" data-sortable="">
-                                        <a href="#" class="dataTable-sorter mx-5">Status</a></th>
-                                        <th class="text-center" data-sortable="false">
+                            <tr class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40"><th data-sortable="false" >
+                              <input id="check_all" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700">
+                            </th>
+                            <th class="text-center" data-sortable="" >
+                              <a href="#" class="text-center dataTable-sorter">Products</a>
+                            </th>
+                            <th class="text-center hidden lg:table-cell" data-sortable="" >
+                              <a href="#" class="text-center dataTable-sorter mx-5">Update</a>
+                            </th>
+                            <th class="text-center" data-sortable="" >
+                              <a href="#" class="text-center dataTable-sorter mx-5">Pricing</a>
+                            </th>
+                            <th class="text-center hidden lg:table-cell" data-sortable="" >
+                              <a href="#" class="text-center dataTable-sorter mx-5">Qty</a>
+                            </th>
+                            <th class="text-center hidden lg:table-cell" data-sortable="" >
+                              <a href="#" class="text-center dataTable-sorter mx-5">Status</a>
+                            </th>
+                            <th class="text-center" data-sortable="false">
                               <p class="text-center dataTable-sorter mx-10">Actions</p></th>
-                                      </tr>
+                          </tr>
                           </thead>
                           <tbody><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">

@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink class=" hover:bg-gray-200 px-3 py-2 rounded-md text-center"
+    <NuxtLink class="transition duration-150 ease-in-out hover:bg-gray-200 px-3 py-2 rounded-md text-center"
     :to="to">
     <slot />
     </NuxtLink>

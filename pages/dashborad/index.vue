@@ -1,5 +1,5 @@
 <template>
-   <div class="flex-col w-full p-2">
+   <div class="animate-fade-down flex-col w-full p-2">
 		<div class="flex-shrink max-w-full px-4 w-full">   
 								<p class="text-3xl font-poppin mt-3 mb-5">Dash Borad</p>
 		</div>     
