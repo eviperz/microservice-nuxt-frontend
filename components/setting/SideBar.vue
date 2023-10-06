@@ -5,7 +5,7 @@
 
             <SettingSideBarLink to ="/setting"> Profile</SettingSideBarLink>
             <SettingSideBarLink to ="/setting/editProfile"> Edit Profile</SettingSideBarLink>
-            <SettingSideBarLink to ="/setting"> Address</SettingSideBarLink>
+            <SettingSideBarLink to ="/setting/address"> Address</SettingSideBarLink>
             <SettingSideBarLink to ="/setting"> Orders History</SettingSideBarLink>
             <SettingSideBarLink to ="/setting"> My Payment</SettingSideBarLink>
             <SettingSideBarLink to ="/setting"> Change my password</SettingSideBarLink>

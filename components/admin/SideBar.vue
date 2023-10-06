@@ -8,7 +8,6 @@
             <AdminSideBarLink to ="/dashborad/outOfStock"> Out of Stock</AdminSideBarLink>
             <AdminSideBarLink to ="/dashborad/coupon"> Coupon Code</AdminSideBarLink>
             <AdminSideBarLink to ="/dashborad/orderList"> Order lists</AdminSideBarLink>
-            <AdminSideBarLink to ="/changeMyPassword"> Change my password</AdminSideBarLink>
             
         </div>
     </nav>

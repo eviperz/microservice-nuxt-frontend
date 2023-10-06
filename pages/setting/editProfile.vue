@@ -5,7 +5,7 @@
          </div>     
  <!-- start -->
  
-     <div class="flex-shrink p-4 mb-4 border-4 border-sky-700 w-full shadow-lg"> 
+     <div class="flex-shrink p-4 mb-4"> 
          <div class="flex flex-col justify-center bg-white dark:bg-gray-800 rounded-lg h-full">
              <div class="p-4 mb-4 bg-white rounded-lg">
              <form action="#">

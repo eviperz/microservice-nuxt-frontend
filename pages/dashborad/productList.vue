@@ -33,11 +33,11 @@
                       </div>
                     </div>
 
-                    <div class="w-full mb-6 overflow-x-auto">
+                    <div class="w-full mb-6 overflow-x-auto ">
                       <form action="">
                        
-                          <div class="dataTable-top flex flex-row justify-between m-5"><div class="dataTable-dropdown">
-                            <label><select class="dataTable-selector">
+                          <div class="dataTable-top flex flex-row justify-between m-5 "><div class="dataTable-dropdown ">
+                            <label><select class="dataTable-selector rounded bg-gray-100 border border-gray-200 overflow-x-auto">
                               <option value="5">5</option>
                               <option value="10">10</option>
                               <option value="15">15</option>
@@ -45,14 +45,14 @@
                               <option value="25">25</option>
                             </select> entries per page</label>
                           </div><div class="dataTable-search">
-                            <input class="dataTable-input" placeholder="Search..." type="text"></div>
+                            <input class="dataTable-input rounded bg-gray-100 border border-gray-200 overflow-x-auto" placeholder="Search..." type="text"></div>
                           </div>
                       
-                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
-                          <div class="dataTable-container">
+                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns rounded ">
+                          <div class="dataTable-container rounded ">
                             <table class="table-sorter table-bordered w-full ltr:text-left rtl:text-right text-gray-600 dark:text-gray-400 dataTable-table">
                           <thead>
-                            <tr class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40">
+                            <tr class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40 ">
                               <th data-sortable="false" >
                                 <input id="check_all" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700">
                               </th>
@@ -325,9 +325,54 @@
                                   </svg>
                                 </a>
                               </td></tr></tbody>
-                        </table></div><div class="dataTable-bottom"><div class="dataTable-info">Showing 1 to 10 of 14 entries</div><nav class="dataTable-pagination"><ul class="dataTable-pagination-list"><li class="active"><a href="#" data-page="1">1</a></li><li class=""><a href="#" data-page="2">2</a></li><li class="pager"><a href="#" data-page="2">›</a></li></ul></nav></div></div>
+                        </table></div>
                         
+
+                        </div>
+                        <div class="flex justify-center mt-5">
+                          <!-- pagination start -->
+                          <nav aria-label="Page navigation example">
+  <ul class="flex items-center -space-x-px h-8 text-sm">
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <span class="sr-only">Previous</span>
+        <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+    </li>
+    <li>
+      <a href="#" aria-current="page" class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <span class="sr-only">Next</span>
+        <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+                        <!-- pagination end -->
+                        </div>
                         
+
+
                       </form>
                     </div>
                   </div>
