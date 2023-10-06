@@ -8,7 +8,7 @@
             <SettingSideBarLink to ="/setting/address"> Address</SettingSideBarLink>
             <SettingSideBarLink to ="/setting"> Orders History</SettingSideBarLink>
             <SettingSideBarLink to ="/setting"> My Payment</SettingSideBarLink>
-            <SettingSideBarLink to ="/setting"> Change my password</SettingSideBarLink>
+            <SettingSideBarLink to ="/setting/changePassword"> Change my password</SettingSideBarLink>
             <SettingSideBarLink to ="/setting"> Withdrawal from membership</SettingSideBarLink>
            
             
